@@ -1,47 +1,14 @@
-:root {
-    --text-color-black: #333;
-    --text-color-white: #fff;
-    --bg-color-red: #da5c5f;
-    --bg-color-f5: #f5f5f5;
-    --bg-color-white: #fff;
-    --boder-color-d3: #d3d3d3;
-}
-
-li,
-ul {
-    list-style: none;
-}
-
-.pc-layout {
-    margin: 0 auto;
-}
-
-.font25 {
-    font-size: 25px;
-}
-
-.font20 {
-    font-size: 20px;
-}
-
-.font13 {
-    font-size: 13px;
-}
-
-.bold {
-    font-weight: 700;
-}
 /* -----------------------------BEGIN MAIN CSS-----------------------------------------*/
-#wapper {
+#directions {
     padding-top: 75px;
 }
 
 /* BOX TITLE */
-#container_title_box {
+#directions_title_box {
     position: relative;
 }
 
-#container_title_box p {
+#directions_title_box p {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -51,7 +18,7 @@ ul {
     text-transform: uppercase;
 }
 
-#container_title_box img {
+#directions_title_box img {
     width: 100%;
     vertical-align: middle;
 }
@@ -65,7 +32,7 @@ ul {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
-.tabs .tablist button {
+.tabs .tablist .tab_button {
     background-color: var(--bg-color-white);
     border: 1px solid var(--boder-color-d3);
     padding: 15px;
@@ -75,13 +42,13 @@ ul {
     font-size: 20px;
     color: #333;
 }
-.tabs .tablist button:nth-child(4) {
+.tabs .tablist .tab_button:nth-child(4) {
     border: 1px solid var(--boder-color-d3);
 }
-.tabs .tablist button:focus {
+.tabs .tablist .tab_button:focus {
     outline: none;
 }
-.tabs .tablist button[aria-selected="true"] {
+.tabs .tablist .tab_button[aria-selected="true"] {
     color: var(--text-color-white);
     background-color: var(--bg-color-red);
     border: none;
@@ -132,7 +99,7 @@ ul {
         width: 90%;
     }
 
-    #container_title_box img {
+    #directions_title_box img {
         height: 200px;
     }
 
@@ -144,6 +111,7 @@ ul {
 
     .container_location .wap_map {
         height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -155,6 +123,10 @@ ul {
 
     .container_location .wap_map {
         height: 200px;
+    }
+
+    #directions_title_box img {
+        height: auto;
     }
 
     .font25 {
@@ -177,5 +149,8 @@ ul {
     }
     .pc-layout {
         width: 1200px;
+    }
+    .container_location .wap_map{
+        height: 400px;
     }
 }

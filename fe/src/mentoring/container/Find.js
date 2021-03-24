@@ -1,41 +1,54 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "../component/Find.css";
 
 function Find(props) {
+  const handleOpenModelSearch =()=>{
+    const modalSearchWrap = document.querySelector(".modal_search_wrap")
+    modalSearchWrap.style.display = "block";
+    // window.addEventListener("click", function (event) {
+    //   if (event.target == document.querySelector(".modal_search_wrap")) {
+    //     modalSearchWrap.style.display = "none";
+    //   }
+    // });
+  };
+
+  const handleCloseModelSearch =()=>{
+    const modalSearchWrap = document.querySelector(".modal_search_wrap");
+    modalSearchWrap.style.display = "none";
+  };
   return (
-    <div id="wapper">
-      <div id="container_title_box">
-        <img
-          src="https://www.bitcamp.co.kr/theme/basic/img/title_05.jpg"
-          alt
-          className="full"
+    <div id="mentor">
+      <div id="mentor_title_box">
+      <img
+          src={require("../../images/title_05.jpg").default}
+          alt=""
         />
         <p className="font25 bold">Find a mentor</p>
       </div>
-      <div id="div_cm">
-        <div className="container_cm">
-          <nav className="container_nav_filter">
+      <div id="mentor_cm">
+        <div className="mentor_cm">
+          <nav className="mentor_nav_filter">
             <div className="nav_filter_center">
               <p className="font20 bold">Field of expertise</p>
               <ul>
                 <li>
-                  <a className="active">All</a>
+                  <Link to="/find" className="active">All</Link>
                 </li>
                 <li>
-                  <a>IT education</a>
+                  <Link to="/find">IT education</Link>
                 </li>
                 <li>
-                  <a>Employment</a>
+                  <Link to="/find">Employment</Link>
                 </li>
                 <li>
-                  <a>Founded</a>
+                  <Link to="/find">Founded</Link>
                 </li>
                 <li>
-                  <a>Overseas employment</a>
+                  <Link to="/find">Overseas employment</Link>
                 </li>
                 <li>
-                  <a>Overseas startup</a>
+                  <Link to="/find">Overseas startup</Link>
                 </li>
               </ul>
             </div>
@@ -43,7 +56,7 @@ function Find(props) {
           <h1 className="font20 bold">Find a Mentor</h1>
           <div className="result_filter">
             <div className="bar_search">
-              <button id="open_modal_search">
+              <button id="open_modal_search" onClick={handleOpenModelSearch}>
                 <i className="fas fa-search" />
               </button>
             </div>
@@ -52,13 +65,13 @@ function Find(props) {
               {/* <li class="item">
       <div class="item_box">
         <div class="div_img">
-          <a>
+          <Link>
             <img
               src="https://www.bitcamp.co.kr/data/file/blog/thumb-2038919246_iCclLjnK_972202b3e4ab9316f81dab9ebf38574a38b2aa6c_380x200.png"
               alt=""
               title=""
             />
-          </a>
+          </Link>
         </div>
         <div class="div_info">
           <p class="info_title font16 bold">
@@ -79,24 +92,24 @@ function Find(props) {
               </span>
             </p>
           </div>
-          <a class="Rm font13">Read more +</a>
+          <a class="Rm font13">Read more +</Link>
         </div>
       </div>
     </li> */}
             </ul>
           </div>
           {/* <div class="pagination">
-  <a href="#">&laquo;</a>
-  <a href="#" class="active">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">&raquo;</a>
+  <Link to="#">&laquo;</Link>
+  <Link to="#" class="active">1</Link>
+  <Link to="#">2</Link>
+  <Link to="#">3</Link>
+  <Link to="#">&raquo;</Link>
 </div> */}
           <div className="modal_search_wrap">
             <fieldset>
               <div className="title_search">
                 <h4>Search</h4>
-                <button id="close_modal">
+                <button id="close_modal" onClick={handleCloseModelSearch}>
                   <i className="fas fa-times" />
                 </button>
               </div>

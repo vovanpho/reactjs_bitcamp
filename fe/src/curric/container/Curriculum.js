@@ -1,44 +1,43 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 import "../component/Curriculum.css";
 
 function Curriculum(props) {
   return (
-    <div id="wapper">
-      <div id="container_title_box">
+    <div id="curriculum">
+      <div id="curriculum_title_box">
         <img
           src="https://www.bitcamp.co.kr/theme/basic/img/title_02.jpg"
-          alt
-          className="full"
+          alt=""
         />
         <p className="font25 bold">Curriculum</p>
       </div>
       <div id="div_cm">
-        <div className="container_cm">
-          <nav className="container_nav_filter">
+        <div className="curriculum_cm">
+          <nav className="curriculum_nav_filter">
             <div className="nav_filter_center">
               <p className="font20 bold">Center name</p>
               <ul>
                 <li>
-                  <a className="active">All</a>
+                  <Link to ="/curriculum" className="active">All</Link>
                 </li>
                 <li>
-                  <a>Seocho Main Garden</a>
+                  <Link to ="/curriculum">Seocho Main Garden</Link>
                 </li>
                 <li>
-                  <a>Gangnam Center</a>
+                  <Link to ="/curriculum">Gangnam Center</Link>
                 </li>
                 <li>
-                  <a>Sinchon Center</a>
+                  <Link to ="/curriculum">Sinchon Center</Link>
                 </li>
                 <li>
-                  <a>Jongno Center</a>
+                  <Link to ="/curriculum">Jongno Center</Link>
                 </li>
                 <li>
-                  <a>Cheonan</a>
+                  <Link to ="/curriculum">Cheonan</Link>
                 </li>
                 <li>
-                  <a>Busan</a>
+                  <Link to ="/curriculum">Busan</Link>
                 </li>
               </ul>
             </div>
@@ -46,19 +45,19 @@ function Curriculum(props) {
               <p className="font20 bold">Course name</p>
               <ul>
                 <li>
-                  <a className="active">All</a>
+                  <Link to ="/curriculum" className="active">All</Link>
                 </li>
                 <li>
-                  <a>Government funding process</a>
+                  <Link to ="/curriculum">Government funding process</Link>
                 </li>
                 <li>
-                  <a>Incumbent Course</a>
+                  <Link to ="/curriculum">Incumbent Course</Link>
                 </li>
                 <li>
-                  <a>Basic lecture</a>
+                  <Link to ="/curriculum">Basic lecture</Link>
                 </li>
                 <li>
-                  <a>General Course</a>
+                  <Link to ="/curriculum">General Course</Link>
                 </li>
               </ul>
             </div>
@@ -69,23 +68,23 @@ function Curriculum(props) {
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -96,30 +95,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -130,30 +129,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -164,30 +163,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -198,30 +197,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -232,30 +231,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -266,30 +265,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -300,30 +299,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -334,30 +333,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -368,30 +367,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -402,30 +401,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -436,30 +435,30 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
               <li className="item">
                 <div className="item_box">
                   <div className="div_img">
-                    <a>
+                    <Link to ="/curriculum">
                       <img
-                        src="https://www.bitcamp.co.kr/data/file/class/thumb-2038919246_Gn345pOc_e138c2410986304e6355667be25fbcc9f9b7ed77_380x200.png"
-                        alt
+                        src="https://www.bitcamp.co.kr/data/file/class/thumb-1794243636_9OMaLNCw_a773a28809fb7c6facaf2acc756b3c191307fb50_380x200.png"
+                        alt=""
                         title
                       />
                       <p className="tag_title_center font13">
                         Seocho Main Garden
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className="div_info">
                     <p className="info_title font20 bold">
-                      <a title="Software web developer training course C using digital convergence-based convergence technology">
+                      <Link to ="/curriculum" title="Software web developer training course C using digital convergence-based convergence technology">
                         Software web developer training course C using digital
                         convergence-based convergence technology
-                      </a>
+                      </Link>
                     </p>
                     <div>
                       <p>
@@ -470,20 +469,18 @@ function Curriculum(props) {
                         <span>2021-02-16 ~ 2021-07-12</span>
                       </p>
                     </div>
-                    <a className="Rm font13">Read more +</a>
+                    <Link to ="/curriculum" className="Rm font13">Read more +</Link>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div className="pagination">
-            <a href="#">«</a>
-            <a href="#" className="active">
-              1
-            </a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">»</a>
+          <div className="curriculum_pagination">
+            <Link to ="/curriculum" >«</Link>
+            <Link to ="/curriculum" className="active">1</Link>
+            <Link to ="/curriculum" >2</Link>
+            <Link to ="/curriculum" >3</Link>
+            <Link to ="/curriculum" >»</Link>
           </div>
         </div>
       </div>

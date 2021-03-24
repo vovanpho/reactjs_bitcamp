@@ -3,13 +3,35 @@ import React from "react";
 import "../component/Direction.css";
 
 function Direction(props) {
+  const handleChangeTab=(e)=>{
+    const target = e.target;
+        const parent = target.parentNode;
+        const grandparent = parent.parentNode;
+
+        // Remove all current selected tabs
+        parent
+          .querySelectorAll('[aria-selected="true"]')
+          .forEach((t) => t.setAttribute("aria-selected", false));
+
+        // Set this tab as selected
+        target.setAttribute("aria-selected", true);
+
+        // Hide all tab panels
+        grandparent
+          .querySelectorAll('[role="tabpanel"]')
+          .forEach((p) => p.setAttribute("hidden", true));
+
+        // Show the selected panel
+        grandparent.parentNode
+          .querySelector(`#${target.getAttribute("aria-controls")}`)
+          .removeAttribute("hidden");
+  }
   return (
-    <div id="wapper">
-      <div id="container_title_box">
+    <div id="directions">
+      <div id="directions_title_box">
         <img
-          src="https://www.bitcamp.co.kr/theme/basic/img/title_01.jpg"
-          alt
-          className="full"
+          src={require("../../images/title_01.jpg").default}
+          alt=""
         />
         <p className="font25 bold">Directions</p>
       </div>
@@ -17,38 +39,46 @@ function Direction(props) {
         <div className="tabs pc-layout">
           <div className="tablist" role="tablist" aria-label="Sample Tabs">
             <button
+              className="tab_button"
               role="tab"
               aria-selected="true"
               aria-controls="panel-1"
               id="tab-1"
               tabIndex={0}
+              onClick={handleChangeTab}
             >
               Seocho Main Garden
             </button>
             <button
+              className="tab_button"
               role="tab"
               aria-selected="false"
               aria-controls="panel-2"
               id="tab-2"
               tabIndex={-1}
+              onClick={handleChangeTab}
             >
               Gangnam Center
             </button>
             <button
+              className="tab_button"
               role="tab"
               aria-selected="false"
               aria-controls="panel-3"
               id="tab-3"
               tabIndex={-1}
+              onClick={handleChangeTab}
             >
               Jongno Center
             </button>
             <button
+              className="tab_button"
               role="tab"
               aria-selected="false"
               aria-controls="panel-4"
               id="tab-4"
               tabIndex={-1}
+              onClick={handleChangeTab}
             >
               Sinchon Center
             </button>
@@ -70,6 +100,7 @@ function Direction(props) {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
+                title="Seocho Main Garden"
               />
             </div>
             <div className="content_location">
@@ -121,6 +152,7 @@ function Direction(props) {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
+                title="Gangnam Center"
               />
             </div>
             <div className="content_location">
@@ -174,6 +206,7 @@ function Direction(props) {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
+                title="Jongno Center"
               />
             </div>
             <div className="content_location">
@@ -219,6 +252,7 @@ function Direction(props) {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
+                title="Sinchon Center"
               />
             </div>
             <div className="content_location">

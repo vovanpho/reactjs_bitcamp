@@ -1,63 +1,13 @@
-:root {
-  --text-color-black: #333;
-  --text-color-white: #fff;
-  --text-color-da: #da5c5f;
-  --text-color-ac: #acacac;
-  --bg-color-red: #da5c5f;
-  --bg-color-f5: #f5f5f5;
-  --bg-color-white: #fff;
-  --bg-color-black: #333;
-  --boder-color-d3: #d3d3d3;
-  --boder-color-33: #333;
-  --boder-color-ff: #fff;
-}
-
-li,
-ul {
-  list-style: none;
-}
-a {
-  color: var(--text-color-black);
-  text-decoration: none;
-}
-
-.pc-layout {
-  margin: 0 auto;
-  width: 1200px;
-}
-.font25 {
-  font-size: 25px;
-}
-.font20 {
-  font-size: 20px;
-}
-.font16 {
-  font-size: 16px;
-}
-.font13 {
-  font-size: 13px;
-}
-.bold {
-  font-weight: 700;
-}
-.mr_bt_10 {
-  margin-bottom: 10px;
-}
-.mr_bt_15 {
-  margin-bottom: 15px;
-}
-/* -------------------------END RESET AND DEFAUT VALUE CSS---------------------- */
-
 /* -----------------------------BEGIN MAIN -----------------------------------------*/
-#wapper {
+#mentoring {
   padding-top: 75px;
 }
 /* BOX TITLE */
-#container_title_box {
+#mentoring_title_box {
   position: relative;
 }
 
-#container_title_box p {
+#mentoring_title_box p {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -68,22 +18,22 @@ a {
   text-transform: uppercase;
 }
 
-#container_title_box img {
+#mentoring_title_box img {
   width: 100%;
   vertical-align: middle;
 }
 
 /* NAV FILETER */
-.container_cm {
+.mentoring_cm {
   margin: 80px auto;
   width: 1200px;
 }
-.container_cm h1 {
+.mentoring_cm h1 {
   margin: 40px 0 15px 0;
   border-bottom: 3px solid var(--boder-color-33);
   width: fit-content;
 }
-.container_cm .result_filter {
+.mentoring_cm .result_filter {
   margin-bottom: 40px;
 }
 .result_filter .bar_search {
@@ -261,12 +211,16 @@ a {
 /*----------------- RESPOSIVE------------------------- */
 @media only screen and (min-width: 320px) {
   /* For mobile */
-  .container_cm {
+  .mentoring_cm {
     width: 90%;
   }
   /* .result_filter .content_result {
     grid-template-columns: 100%;
   } */
+  #mentoring_title_box img {
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -275,6 +229,9 @@ a {
   /* .result_filter .content_result {
     grid-template-columns: 48% 48%;
   } */
+  #mentoring_title_box img {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 1200px) {
   /* For desktop: */

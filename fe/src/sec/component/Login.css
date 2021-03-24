@@ -17,7 +17,7 @@ hr {
   margin-bottom: 25px;
 }
 /* Set a style for all buttons */
-button {
+.container button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -27,7 +27,7 @@ button {
   width: 100%;
   opacity: 0.9;
 }
-button:hover {
+.container button:hover {
   opacity:1;
 }
 /* Extra styles for the cancel button */
