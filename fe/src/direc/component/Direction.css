@@ -1,0 +1,181 @@
+:root {
+    --text-color-black: #333;
+    --text-color-white: #fff;
+    --bg-color-red: #da5c5f;
+    --bg-color-f5: #f5f5f5;
+    --bg-color-white: #fff;
+    --boder-color-d3: #d3d3d3;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+.pc-layout {
+    margin: 0 auto;
+}
+
+.font25 {
+    font-size: 25px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.bold {
+    font-weight: 700;
+}
+/* -----------------------------BEGIN MAIN CSS-----------------------------------------*/
+#wapper {
+    padding-top: 75px;
+}
+
+/* BOX TITLE */
+#container_title_box {
+    position: relative;
+}
+
+#container_title_box p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    color: var(--text-color-white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#container_title_box img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* --------------------------------- */
+.tabs_location {
+    width: 100%;
+    /* border-bottom: 1px solid var(--boder-color-d3); */
+}
+.tabs .tablist {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.tabs .tablist button {
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--boder-color-d3);
+    padding: 15px;
+    border-radius: 0;
+    border-right: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+.tabs .tablist button:nth-child(4) {
+    border: 1px solid var(--boder-color-d3);
+}
+.tabs .tablist button:focus {
+    outline: none;
+}
+.tabs .tablist button[aria-selected="true"] {
+    color: var(--text-color-white);
+    background-color: var(--bg-color-red);
+    border: none;
+}
+
+/*  ----------------------------------------------*/
+.container_location {
+    margin: 80px auto;
+    min-height: 500px;
+}
+
+.container_location h1 {
+    border-bottom: 1px solid var(--boder-color-d3);
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.container_location .wap_map {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.container_location .wap_map #map {
+    width: 100%;
+    height: 100%;
+}
+
+.address_location li .div_label {
+    padding: 10px;
+    border-top: 1px solid var(--boder-color-d3);
+    border-bottom: 1px solid var(--boder-color-d3);
+    background-color: var(--bg-color-f5);
+}
+
+.address_location li .div_desc {
+    padding: 10px;
+}
+
+/*----------------- RESPOSIVE------------------------- */
+@media only screen and (min-width: 320px) {
+    /* For mobile */
+    .pc-layout {
+        width: 100%;
+    }
+    .container_location {
+        width: 90%;
+    }
+
+    #container_title_box img {
+        height: 200px;
+    }
+
+    .tabs_location .listtab {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .container_location .wap_map {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .container_location {
+        width: 90%;
+    }
+
+    .container_location .wap_map {
+        height: 200px;
+    }
+
+    .font25 {
+        font-size: 35px;
+    }
+
+    .font20 {
+        font-size: 20px;
+    }
+
+    .font13 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For desktop: */
+    .container_location {
+        width: 1200px;
+    }
+    .pc-layout {
+        width: 1200px;
+    }
+}

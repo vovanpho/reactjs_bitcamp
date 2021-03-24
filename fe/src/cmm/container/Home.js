@@ -14,33 +14,36 @@ const Home = () => {
         <div className="siderbar__top">
           <img
             src={require("../../images/visual1.jpg").default}
-            alt="sider top"
+            alt="hinh anh bi loi "
           />
         </div>
         <div className="siderbar__center">
           <img
             src={require("../../images/visual2.jpg").default}
-            alt="sider center"
+            alt="hinh anh bi loi "
           />
           <div className="siderbar__center-child">
             <ul>
               <li>
                 <img
                   src={require("../../images/main_visual_banner1.jpg").default}
-                  alt
+                  alt="hinh anh bi loi "
                 />
               </li>
               <li>
                 <img
                   src={require("../../images/main_visual_banner2.jpg").default}
-                  alt
+                  alt="hinh anh bi loi "
                 />
               </li>
             </ul>
           </div>
         </div>
         <div className="siderbar__bottom">
-          <img src={require("../../images/visual3.jpg").default} alt />
+          <img
+            src={require("../../images/visual3.jpg").default}
+            alt="hinh anh bi loi "
+          />
           <div className="siderbar__bottom-controller">
             <i className="fas fa-angle-left" />
             <i className="fas fa-angle-right" />
@@ -67,7 +70,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image1.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -86,7 +89,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image2.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -108,7 +111,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image2.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -130,7 +133,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image2.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -152,7 +155,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image3.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -174,7 +177,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image4.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -196,7 +199,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image5.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -218,7 +221,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image6.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -240,7 +243,7 @@ const Home = () => {
                 <div className="curricul__box-image">
                   <img
                     src={require("../../images/curricul_image7.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="curricul__box-title">
@@ -285,7 +288,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -302,7 +305,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_2.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -319,7 +322,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_3.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -336,7 +339,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_4.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -353,7 +356,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_5.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -370,7 +373,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_6.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -387,7 +390,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_7.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -404,7 +407,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_8.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -421,7 +424,7 @@ const Home = () => {
                 <div className="requitment__box-image">
                   <img
                     src={require("../../images/recruitment_9.png").default}
-                    alt
+                    alt="hinh anh bi loi "
                   />
                 </div>
                 <div className="requitment__box-title">
@@ -450,7 +453,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog.png").default} alt />
+                    <img
+                      src={require("../../images/blog.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>National Employment Support System</h5>
@@ -469,7 +475,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog_2.png").default} alt />
+                    <img
+                      src={require("../../images/blog_2.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>Tomorrow Learning Card</h5>
@@ -488,7 +497,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog_3.png").default} alt />
+                    <img
+                      src={require("../../images/blog_3.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>Bit Camp in response to Corona</h5>
@@ -507,7 +519,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog_4.png").default} alt />
+                    <img
+                      src={require("../../images/blog_4.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>Bit Camp Employment News</h5>
@@ -526,7 +541,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog_5.png").default} alt />
+                    <img
+                      src={require("../../images/blog_5.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>Basic lecture (Java lecture/Python special...</h5>
@@ -545,7 +563,10 @@ const Home = () => {
                 {/* BOX */}
                 <div className="curricul__box">
                   <div className="curricul__box-image">
-                    <img src={require("../../images/blog_6.png").default} alt />
+                    <img
+                      src={require("../../images/blog_6.png").default}
+                      alt="hinh anh bi loi "
+                    />
                   </div>
                   <div className="curricul__box-title">
                     <h5>2020 SW Talent Festival...</h5>

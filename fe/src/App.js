@@ -1,5 +1,10 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
 import routes from "./router-config";
 
 import Header from "./cmm/container/Header";
@@ -23,11 +28,20 @@ const showRoute = (routes) => {
 };
 
 const App = () => {
+  let location = useLocation();
   return (
     <Router>
-      <Header />
+      {location.pathname === "/login" || location.pathname === "/signup" ? (
+        ""
+      ) : (
+        <Header />
+      )}
       {showRoute(routes)}
-      <Footer />
+      {location.pathname === "/login" || location.pathname === "/signup" ? (
+        ""
+      ) : (
+        <Footer />
+      )}
     </Router>
   );
 };

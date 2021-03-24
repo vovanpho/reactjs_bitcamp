@@ -1,147 +1,147 @@
-  /* HEADER */
-  .header {
-    background-color: #151726;
-    width: 100%;
-    color: white;
-    height: 75px;
-    line-height: 75px;
-    box-shadow: 0 1px white;
-    z-index: 9999;
-    border-bottom: -2px solid rgb(243, 237, 237);
-    position: fixed;
-  }
-  .header .header__menu .header__menu-icon {
-    margin-top: 10px;
-  }
-  .header .header__menu {
-    width: 96%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-  }
-  .header__menu .header__menu-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-  }
-  .header__menu-nav li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
-  .header .header__menu .header__menu-nav-btn {
-    text-align: right;
-    cursor: pointer;
-  }
-  .header__menu-nav-btn:hover +.nav__menu{
-    display: block;
-  }
-  /* header submenu */
-  .header__submenu{
-    display: none;
-    position: absolute;
-    top: 76px;
-    z-index: 999999;
-    box-shadow: 1px 1px 1px black;
-  }
-  .header__submenu ul{  
-    flex-direction: column;      
-    background-color: #fff; 
-    width: 200px;      
-  }
-  .header__submenu li{   
-    padding: 0 10px;
-    height: 65px;
-    margin-top: -20px;
-    font-size: 12px;
-  }
-  .header__submenu .header__submenu-a{
-    color: black  !important;
-  }
-  .header__menu-nav ul li:hover .header__submenu{
-    display: block;
-  }
-  /* end header submenu */
-  /* END HEADER */
-  /* nav menu show/hidden when click icon */
-  .nav__menu{
-    display: none;
-    width: 100%;
-    background-color: rgb(234, 238, 225);       
-    position: fixed;
-    top:12%;
-    z-index: 999999;
-    border:1px solid black;
-  }
-  .nav__menu-title{
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .nav__menu hr{
-    width: 95%;
-  }
-  .nav__menu-btn{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 95%;
-    margin: 0 auto;   
-    margin-top: 10px;  
-    text-align: center;  
-    grid-gap: 5px;
-    box-sizing: border-box;
-  }
-  .nav__menu-btn button{
-    width:100%;
-    padding: 10px 15px;
-    cursor: pointer;
-    border: 1px solid black;
-    outline:  none;
-  }
-  .nav__menu-link{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 94%;
-    margin: 0 auto;
-   
-  }
-  .nav__menu-link > div{
-    border-right: 1px solid rgb(202, 196, 196);
-    padding:15px;
-  }
-  .nav__menu-link > div:last-child{
-    border:none;
-  }
-  .nav__menu-link > div ul{
-    list-style-type: none;
-    margin-top: 12px;
-  }
-  .nav__menu-link > div h5{
-    cursor: pointer;
-  }
-  .nav__menu-link > div a{
-    text-decoration: none;
-    color: #555;
-    font-size: 12px;
-    line-height: 30px;     
-    cursor: pointer;   
-  }
-  #closesubmenu{
-    cursor:pointer;
-  }
-  .contactus{
-    padding: 20px;
-    margin-bottom: 50px;
-  }
-  .contactus h5{
-    text-align: center;
-  }
-  .contactus a{
-    text-decoration: none;
-    color: #555;       
-  }
-  /* END nav menu show/hidden when click icon */
-  
+/* HEADER */
+.header {
+  background-color: #151726;
+  width: 100%;
+  color: white;
+  height: 75px;
+  line-height: 75px;
+  box-shadow: 0 1px white;
+  z-index: 9999;
+  border-bottom: -2px solid rgb(243, 237, 237);
+  position: fixed;
+}
+.header .header__menu .header__menu-icon {
+  margin-top: 10px;
+}
+.header .header__menu {
+  width: 96%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+.header__menu .header__menu-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.header__menu-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.header .header__menu .header__menu-nav-btn {
+  text-align: right;
+  cursor: pointer;
+}
+.header__menu-nav-btn:hover + .nav__menu {
+  display: block;
+  cursor: pointer;
+}
+/* header submenu */
+.header__submenu {
+  display: none;
+  position: absolute;
+  top: 76px;
+  z-index: 999999;
+  box-shadow: 1px 1px 1px black;
+}
+.header__submenu ul {
+  flex-direction: column;
+  background-color: #fff;
+  width: 200px;
+}
+.header__submenu li {
+  padding: 0 10px;
+  height: 65px;
+  margin-top: -20px;
+  font-size: 12px;
+}
+.header__submenu .header__submenu-a {
+  color: black !important;
+}
+.header__menu-nav ul li:hover .header__submenu {
+  display: block;
+  cursor: pointer;
+}
+/* end header submenu */
+/* END HEADER */
+/* nav menu show/hidden when click icon */
+.nav__menu {
+  display: none;
+  width: 100%;
+  background-color: rgb(234, 238, 225);
+  position: fixed;
+  top: 12%;
+  z-index: 999999;
+  border: 1px solid black;
+}
+.nav__menu-title {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.nav__menu hr {
+  width: 95%;
+}
+.nav__menu-btn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  grid-gap: 5px;
+  box-sizing: border-box;
+}
+.nav__menu-btn button {
+  width: 100%;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  outline: none;
+}
+.nav__menu-link {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 94%;
+  margin: 0 auto;
+}
+.nav__menu-link > div {
+  border-right: 1px solid rgb(202, 196, 196);
+  padding: 15px;
+}
+.nav__menu-link > div:last-child {
+  border: none;
+}
+.nav__menu-link > div ul {
+  list-style-type: none;
+  margin-top: 12px;
+}
+.nav__menu-link > div h5 {
+  cursor: pointer;
+}
+.nav__menu-link > div a {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+}
+#closesubmenu {
+  cursor: pointer;
+}
+.contactus {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.contactus h5 {
+  text-align: center;
+}
+.contactus a {
+  text-decoration: none;
+  color: #555;
+}
+/* END nav menu show/hidden when click icon */

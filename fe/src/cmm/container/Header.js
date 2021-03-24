@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../component/Header.css";
 
@@ -14,112 +14,112 @@ const Header = () => {
           <nav className="header__menu-nav">
             <ul>
               <li>
-                <a href>Beat Camp</a>
+                <a>Beat Camp</a>
                 <div className="header__submenu">
                   <ul>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/intro" className="header__submenu-a">
                         Bit Camp Introduction
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/direction" className="header__submenu-a">
                         Directions
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href>Curriculum</a>
+                <a>Curriculum</a>
                 <div className="header__submenu">
                   <ul>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/curriculum" className="header__submenu-a">
                         Government funding process
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/curriculum" className="header__submenu-a">
                         Incumbent Course
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/curriculum" className="header__submenu-a">
                         Basic lecture
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/curriculum" className="header__submenu-a">
                         General Course
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href>Employment and Startup Support Center</a>
+                <a>Employment and Startup Support Center</a>
                 <div className="header__submenu">
                   <ul>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/employ" className="header__submenu-a">
                         Employment and Startup
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
-                        Suport Center
-                      </a>
+                      <Link to="/support" className="header__submenu-a">
+                        Support Center
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/recruitment" className="header__submenu-a">
                         Recruitment Announcement
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/overseas" className="header__submenu-a">
                         Overseas employment{" "}
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/startup" className="header__submenu-a">
                         Start up
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href>Blog</a>
+                <a>Blog</a>
                 <div className="header__submenu">
                   <ul>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/blog" className="header__submenu-a">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href>Mentoring</a>
+                <a>Mentoring</a>
                 <div className="header__submenu">
                   <ul>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/mentoring" className="header__submenu-a">
                         Mentoring
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="header__submenu-a" href>
+                      <Link to="/find" className="header__submenu-a">
                         Find a Mentor
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href>CONTACT US</a>
+                <Link to="/contact">CONTACT US</Link>
               </li>
             </ul>
           </nav>
@@ -154,10 +154,10 @@ const Header = () => {
             <h5>Beat Camp</h5>
             <ul>
               <li>
-                <a href>Bit Camp Introduction</a>
+                <a>Bit Camp Introduction</a>
               </li>
               <li>
-                <a href>Directions</a>
+                <a>Directions</a>
               </li>
             </ul>
           </div>
@@ -165,16 +165,16 @@ const Header = () => {
             <h5>Curriculum</h5>
             <ul>
               <li>
-                <a href>Government funding process</a>
+                <a>Government funding process</a>
               </li>
               <li>
-                <a href>Incumbent Course</a>
+                <a>Incumbent Course</a>
               </li>
               <li>
-                <a href>Basic lecture</a>
+                <a>Basic lecture</a>
               </li>
               <li>
-                <a href>General Course</a>
+                <a>General Course</a>
               </li>
             </ul>
           </div>
@@ -182,13 +182,13 @@ const Header = () => {
             <h5>Employment and Startup Support Center</h5>
             <ul>
               <li>
-                <a href>Employment and Startup Support Center</a>
+                <a>Employment and Startup Support Center</a>
               </li>
               <li>
-                <a href>Recruitment Announcement</a>
+                <a>Recruitment Announcement</a>
               </li>
               <li>
-                <a href>Overseas employment and start-up</a>
+                <a>Overseas employment and start-up</a>
               </li>
             </ul>
           </div>
@@ -196,7 +196,7 @@ const Header = () => {
             <h5>blog</h5>
             <ul>
               <li>
-                <a href>blog</a>
+                <a>blog</a>
               </li>
             </ul>
           </div>
@@ -204,17 +204,17 @@ const Header = () => {
             <h5>Mentoring</h5>
             <ul>
               <li>
-                <a href>Mentoring</a>
+                <a>Mentoring</a>
               </li>
               <li>
-                <a href>Find a Mentor</a>
+                <a>Find a Mentor</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="contactus">
           <h5>
-            <a href>CONTACT US</a>
+            <a>CONTACT US</a>
           </h5>
         </div>
       </section>
